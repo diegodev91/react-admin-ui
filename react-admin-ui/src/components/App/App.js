@@ -1,12 +1,18 @@
 import "./App.css";
 import Options from "../Options/Options";
+import ToogleVisibility from "../ToogleVisibility/ToogleVisibility";
+import UserTable from "../UserTable/UserTable";
+import UserForm from "../UserForm/UserForm";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">App test</header>
-      <div>Hi there</div>
-      <Options></Options>
+      <div class="button-section">
+        <Options></Options>
+        <ToogleVisibility></ToogleVisibility>
+      </div>
+      <UserTable></UserTable>
+      <UserForm></UserForm>
     </div>
   );
 }
