@@ -7,7 +7,7 @@ import UserForm from "../UserForm/UserForm";
 function App() {
   return (
     <div className="App">
-      <div class="button-section">
+      <div className="button-section">
         <Options></Options>
         <ToogleVisibility></ToogleVisibility>
       </div>

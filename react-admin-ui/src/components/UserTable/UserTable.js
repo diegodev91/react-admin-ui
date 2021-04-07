@@ -29,7 +29,7 @@ export default function UserTable() {
           </TableHead>
           <TableBody>
             {rows.map((row) => (
-              <TableRow key={row.name}>
+              <TableRow key={row.username}>
                 <TableCell align="center">{row.username}</TableCell>
                 <TableCell align="center">{row.gamesPlayed}</TableCell>
               </TableRow>
