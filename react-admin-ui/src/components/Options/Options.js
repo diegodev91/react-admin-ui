@@ -1,7 +1,9 @@
-import React from "react";
+import React, { Component } from "react";
 import { Button } from "@material-ui/core";
 import "./Options.css";
 
-export default function Options() {
-  return <Button color="primary">Add User</Button>;
+export default class Options extends Component {
+  render() {
+    return <Button color="primary">Add User</Button>;
+  }
 }

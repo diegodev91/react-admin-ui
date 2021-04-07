@@ -16,27 +16,29 @@ const rows = [
   createData("Sebastian Castillo", 1),
 ];
 
-export default function UserTable() {
-  return (
-    <div className="usertable">
-      <TableContainer component={Paper}>
-        <Table ia-label="simple table">
-          <TableHead>
-            <TableRow>
-              <TableCell align="center">Name</TableCell>
-              <TableCell align="center"># Games</TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {rows.map((row) => (
-              <TableRow key={row.username}>
-                <TableCell align="center">{row.username}</TableCell>
-                <TableCell align="center">{row.gamesPlayed}</TableCell>
+export default class UserTable {
+  render() {
+    return (
+      <div className="usertable">
+        <TableContainer component={Paper}>
+          <Table ia-label="simple table">
+            <TableHead>
+              <TableRow>
+                <TableCell align="center">Name</TableCell>
+                <TableCell align="center"># Games</TableCell>
               </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-      </TableContainer>
-    </div>
-  );
+            </TableHead>
+            <TableBody>
+              {rows.map((row) => (
+                <TableRow key={row.username}>
+                  <TableCell align="center">{row.username}</TableCell>
+                  <TableCell align="center">{row.gamesPlayed}</TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </TableContainer>
+      </div>
+    );
+  }
 }
