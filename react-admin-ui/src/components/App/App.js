@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <div className="button-section">
-        <Options></Options>
+        <Options numberOfUser={100}></Options>
         <ToogleVisibility></ToogleVisibility>
       </div>
       <UserTable></UserTable>
